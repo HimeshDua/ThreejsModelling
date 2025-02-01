@@ -1,9 +1,13 @@
 @import url(./settings.css);
+@font-face {
+  font-family: "NeueMon";
+  src: url(assets/fonts/neuemontreal.cqi9ibog.woff2) format("woff2");
+}
 
 :root {
   --primaryColor: #111111;
   --secondaryColor: #efefef;
-  --primaryFont: "Urbanist";
+  --primaryFont: "NeueMon" ;
   --secondaryFont: "Inter";
 }
 
@@ -86,4 +90,23 @@ body {
 }
 h1 {
   font-size: 12rem;
+}
+.header {
+  position: relative;
+}
+#model-container {
+  position: absolute;
+  width: 100vw;
+  height: 99vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#model-container canvas {
+  position: absolute;
+  height: 99vh;
+  width: 100vw;
+  top: 0;
+  left: 0%;
 }
