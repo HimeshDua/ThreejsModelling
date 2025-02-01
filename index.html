@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barba JS - Homebase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-barba="wrapper">
+    <div class="transitions"></div>
+    <div class="wrapper">
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <main
+        data-barba="container"
+        data-barba-namespace="home"
+        class="container"
+      >
+        <div class="header">
+          <h1>Homebase</h1>
+        </div>
+        <div class="footer"><span>(01)</span></div>
+      </main>
+    </div>
+
+    <!-- Correct Barba.js and GSAP CDN links -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
