@@ -11,11 +11,11 @@ function pageTransition() {
     ease: "power4.inOut",
   });
   tl.to(".transitions", {
-    duration: 1,
+    duration: 0.8,
     scaleY: 0,
     transformOrigin: "top",
     ease: "power4.inOut",
-    delay: 0.5,
+    delay: 0.1,
   });
   tl.to(".nav a", {
     pointerEvents: "auto",
@@ -24,7 +24,7 @@ function pageTransition() {
 }
 
 function delay(n) {
-  n = n || 2000;
+  n = n || 1500;
   return new Promise((done) => {
     setTimeout(() => {
       done();
@@ -39,7 +39,7 @@ barba.init({
       async leave(data) {
         const done = this.async();
         pageTransition();
-        await delay(1500);
+        await delay(2000);
         done();
       },
     },
