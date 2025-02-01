@@ -1,4 +1,4 @@
-@import url(../settings/settings.css);
+@import url(./settings.css);
 
 :root {
   --primaryColor: #111111;
