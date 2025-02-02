@@ -80,6 +80,9 @@ window.addEventListener("load", () => {
 });
 
 // Three.js Implementation
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
 let scene, camera, renderer, model, mixer;
 let animationFrameId = null;
 
@@ -161,7 +164,7 @@ function initThreeJS() {
   scene.add(directionalLight);
 
   // Model loading
-  new THREE.GLTFLoader().load(
+  new GLTFLoader().load(
     "./assets/model/Skull.glb",
     (gltf) => {
       model = gltf.scene;
