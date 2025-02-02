@@ -7,7 +7,7 @@
 :root {
   --primaryColor: #111111;
   --secondaryColor: #efefef;
-  --primaryFont: "NeueMon" ;
+  --primaryFont: "NeueMon";
   --secondaryFont: "Inter";
 }
 
@@ -49,6 +49,7 @@ body {
 .wrapper {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .nav {
@@ -68,21 +69,31 @@ body {
   bottom: 2rem;
   padding: 4rem 2rem;
 }
-
 .transitions {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
-  pointer-events: none;
-  background: var(--secondaryColor);
+  width: 100%;
+  height: 100%;
+  background: var(--secondaryColor); /* Change to your preferred color */
   transform: scaleY(0);
-  -webkit-transform: scaleY(0);
-  -moz-transform: scaleY(0);
-  -ms-transform: scaleY(0);
-  -o-transform: scaleY(0);
+  transform-origin: bottom;
+  z-index: 999;
+  pointer-events: none;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--secondaryColor); /* Black background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 1000;
 }
 
 .container {
@@ -96,17 +107,19 @@ h1 {
 }
 #model-container {
   position: absolute;
-  width: 100vw;
-  height: 99vh;
+  width: 100%;
+  height: 88vh;
   top: 0;
   left: 0;
-  z-index: -1;
+  overflow: hidden;
 }
 
-#model-container canvas {
-  position: absolute;
-  height: 99vh;
-  width: 100vw;
+.wrapper video {
+  position: fixed;
+  z-index: 100;
   top: 0;
-  left: 0%;
+  left: 0;
+  height: 100%;
+  background: red;
+  z-index: -1;
 }

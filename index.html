@@ -3,41 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barba JS - Homebase</title>
+    <title>Homebase</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaquery.css" />
   </head>
-  <body data-barba="wrapper">
+  <body>
+    <div class="loader"></div>
     <div class="transitions"></div>
     <div class="wrapper">
+      <video autoplay muted loop src="assets/ripples/0204.mp4"></video>
       <div class="nav">
-        <a href="./index.html">Home</a>
+        <a href="#">Home</a>
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
       </div>
-      <main
-        data-barba="container"
-        data-barba-namespace="home"
-        class="container"
-      >
+      <main class="container">
         <div class="header">
           <h1>Homebase</h1>
           <div id="model-container"></div>
-          </div>
         </div>
         <div class="footer"><span>(01)</span></div>
       </main>
     </div>
 
-    <!-- Correct Barba.js and GSAP CDN links -->
+    <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 
-    <!-- Correct Three.js and additional modules CDN links -->
+    <!-- Three.js and GLTFLoader CDN -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
 
     <!-- Your custom script -->
     <script src="./script.js"></script>
