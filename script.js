@@ -162,7 +162,7 @@ function initThreeJS() {
 
   // Model loading
   new THREE.GLTFLoader().load(
-    "/assets/model/Skull.glb",
+    "./assets/model/Skull.glb",
     (gltf) => {
       model = gltf.scene;
       scene.add(model);
