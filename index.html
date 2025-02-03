@@ -6,12 +6,17 @@
     <title>Homebase</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaquery.css" />
+    <link rel="shortcut icon" href="./assets/Images/FavIcon/logo.png" type="image/x-icon">
+    <!-- Links for Javascript Libraries -->
+    <script src="./three.r134.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./vinta.fog.min.js"></script>
   </head>
   <body>
     <div class="loader"></div>
     <div class="transitions"></div>
     <div class="wrapper">
-      <video autoplay muted loop src="assets/ripples/0204.mp4"></video>
       <div class="nav">
         <a href="#">Home</a>
         <a href="./about.html">About</a>
@@ -26,19 +31,7 @@
       </main>
     </div>
 
-    <!-- GSAP CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-    <!-- Three.js and GLTFLoader CDN -->
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.155.0/examples/jsm/"
-        }
-      }
-    </script>
-    <!-- Your custom script -->
-    <script type="module" src="./script.js"></script>
+    <script src="./script.js"></script>
+    <script></script>
   </body>
 </html>

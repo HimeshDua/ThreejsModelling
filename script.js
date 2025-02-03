@@ -1,6 +1,6 @@
 // Show Loader on Page Load
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".loader").style.display = "flex"; // Show loader
+  document.querySelector(".loader").style.display = "block"; // Show loader
 });
 
 // Hide Loader After Page Fully Loads
@@ -80,8 +80,9 @@ window.addEventListener("load", () => {
 });
 
 // Three.js Implementation
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+// import * as THREE from 'three';
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+const GLTFLoader = THREE.GLTFLoader;
 
 let scene, camera, renderer, model, mixer;
 let animationFrameId = null;
@@ -164,7 +165,7 @@ function initThreeJS() {
   scene.add(directionalLight);
 
   // Model loading
-  new GLTFLoader().load(
+  new THREE.GLTFLoader().load(
     "./assets/model/Skull.glb",
     (gltf) => {
       model = gltf.scene;
@@ -230,3 +231,19 @@ function updateModelPosition() {
 
 // Initial load
 initThreeJS();
+
+// Vinta JS
+VANTA.FOG({
+  el: "body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.0,
+  minWidth: 200.0,
+  highlightColor: 0x0,
+  midtoneColor: 0xa21818,
+  lowlightColor: 0x0,
+  baseColor: 0x360606,
+  blurFactor: 0.71,
+  speed: 2.2,
+});
