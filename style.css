@@ -3,7 +3,9 @@
   font-family: "NeueMon";
   src: url(assets/fonts/neuemontreal.cqi9ibog.woff2) format("woff2");
 }
-
+* {
+  font-family: var(--primaryFont) !important;
+}
 :root {
   --primaryColor: #111111;
   --secondaryColor: #efefef;
@@ -102,8 +104,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: end;
-  gap: 2em;
-  padding: 2.4em 3em;
+  gap: 2rem;
+  padding: 2.4rem 5rem;
   border-bottom: 1px solid var(--primaryColor);
   background: #111111c6;
   backdrop-filter: blur(8px);
@@ -113,13 +115,14 @@ body {
   color: var(--secondaryColor);
   text-decoration: none;
 }
+.nav a:hover {
+  text-decoration: underline;
+}
 .header {
   position: relative;
   display: flex;
-  align-items: end;
-  flex-direction: column;
-  justify-content: start;
-  padding: 2em 3em;
+  flex-direction: row;
+  padding: 4rem 3rem;
 }
 .header h1 {
   mix-blend-mode: difference;

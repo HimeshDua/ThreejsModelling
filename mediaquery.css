@@ -1,7 +1,23 @@
 @media only screen and (max-width: 600px) {
   /* Your CSS rules for extra small devices */
   html {
-    font-size: calc(100vw / 1920 * 18);
+    font-size: calc(100vw / 1920 * 20);
+  }
+  .nav {
+    justify-content: center;
+    gap: 5.8rem;
+    padding: 2.6em 3em;
+  }
+  .nav a {
+    font-size: 3.2rem;
+  }
+  .header {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .footer span {
+    font-size: large;
   }
 }
 
@@ -29,6 +45,6 @@
 @media only screen and (min-width: 1200px) {
   /* Your CSS rules for extra large devices */
   html {
-  font-size: calc(100vw / 1920 * 10.4);
+    font-size: calc(100vw / 1920 * 10.4);
   }
 }

@@ -184,8 +184,8 @@ function updateModelPosition() {
   const visibleHeight = 2 * Math.tan(fov / 2) * distanceFromCamera;
   const visibleWidth = visibleHeight * camera.aspect;
 
-  model.position.x = visibleWidth / 2 - 4;
-  model.position.y = -visibleHeight / 2 + 2;
+  model.position.x = visibleWidth / 2 - 4.5;
+  model.position.y = -visibleHeight / 2 + 1.4;
 
   const scale = visibleHeight * 0.01;
   model.scale.set(scale, scale, scale);
@@ -194,20 +194,3 @@ function updateModelPosition() {
 }
 
 initThreeJS();
-
-
-// VANTA.FOG({
-//   el: "body",
-//   mouseControls: true,
-//   touchControls: true,
-//   gyroControls: false,
-//   minHeight: 200.00,
-//   minWidth: 200.00,
-//   highlightColor: 0x0,
-//   midtoneColor: 0x2900f7,
-//   lowlightColor: 0x0,
-//   baseColor: 0x0,
-//   blurFactor: 0.71,
-//   speed: 1.20,
-//   zoom: 0.80
-// });
