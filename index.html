@@ -6,7 +6,11 @@
     <title>Homebase</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaquery.css" />
-    <link rel="shortcut icon" href="./assets/Images/FavIcon/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/Images/FavIcon/logo.png"
+      type="image/x-icon"
+    />
     <!-- Links for Javascript Libraries -->
     <script src="./three.r134.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
@@ -17,6 +21,7 @@
     <div class="loader"></div>
     <div class="transitions"></div>
     <div class="wrapper">
+      <div id="model-container"></div>
       <div class="nav">
         <a href="#">Home</a>
         <a href="./about.html">About</a>
@@ -24,14 +29,38 @@
       </div>
       <main class="container">
         <div class="header">
-          <h1>Homebase</h1>
-          <div id="model-container"></div>
+          <hgroup>
+            <h1>Homebase</h1>
+            <!-- #fE4618 -->
+            <p>
+              Hi, This is the Homebase where i have animated few things and
+              tried to make it smooth and optimized give a Star on my github
+              reposetory if you really liked it! Thanks.
+            </p>
+          </hgroup>
         </div>
+        <aside class="aside"></aside>
         <div class="footer"><span>(01)</span></div>
       </main>
     </div>
 
     <script src="./script.js"></script>
-    <script></script>
+    <script>
+      VANTA.FOG({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        highlightColor: 0xc57b1b,
+        midtoneColor: 0xefefef,
+        lowlightColor: 0xbb8d2c,
+        baseColor: 0x0,
+        blurFactor: 0.9,
+        speed: 2.5,
+        zoom: 0.7,
+      });
+    </script>
   </body>
 </html>

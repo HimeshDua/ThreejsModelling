@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
-    
+
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mediaquery.css" />
-    <link rel="shortcut icon" href="./assets/Images/FavIcon/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/Images/FavIcon/logo.png"
+      type="image/x-icon"
+    />
     <!-- Links for Javascript Libraries -->
     <script src="./three.r134.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
@@ -18,6 +22,7 @@
     <div class="loader"></div>
     <div class="transitions"></div>
     <div class="wrapper">
+      <div id="model-container"></div>
       <div class="nav">
         <a href="./index.html">Home</a>
         <a href="#">About</a>
@@ -25,14 +30,39 @@
       </div>
       <main class="container">
         <div class="header">
-          <h1>ABOUT ME</h1>
-          <div id="model-container"></div>
+          <hgroup>
+            <h1>ABOUT</h1>
+            <p>
+              Hi, This is the Homebase where i have animated few things and
+              tried to make it smooth and optimized give a Star on my github
+              reposetory if you really liked it! Thanks.
+            </p>
+          </hgroup>
         </div>
+        <!-- <aside class="aside">
+          <video autoplay muted loop src="assets/ripples/bgv.mp4"></video>
+        </aside> -->
         <div class="footer"><span>(02)</span></div>
       </main>
     </div>
 
     <script src="./script.js"></script>
-    <script></script>
+    <script>
+      VANTA.FOG({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        highlightColor: 0x8b8b8b,
+        midtoneColor: 0xefefef,
+        lowlightColor: 0x8cb3aa,
+        baseColor: 0x0,
+        blurFactor: 0.9,
+        speed: 1.1,
+        zoom: 1.2,
+      });
+    </script>
   </body>
 </html>

@@ -195,17 +195,19 @@ function updateModelPosition() {
 
 initThreeJS();
 
-VANTA.FOG({
-  el: "body",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.0,
-  minWidth: 200.0,
-  highlightColor: 0x0,
-  midtoneColor: 0xa21818,
-  lowlightColor: 0x0,
-  baseColor: 0x360606,
-  blurFactor: 0.71,
-  speed: 2.2,
-});
+
+// VANTA.FOG({
+//   el: "body",
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.00,
+//   minWidth: 200.00,
+//   highlightColor: 0x0,
+//   midtoneColor: 0x2900f7,
+//   lowlightColor: 0x0,
+//   baseColor: 0x0,
+//   blurFactor: 0.71,
+//   speed: 1.20,
+//   zoom: 0.80
+// });

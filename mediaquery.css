@@ -1,31 +1,34 @@
 @media only screen and (max-width: 600px) {
   /* Your CSS rules for extra small devices */
   html {
-    font-size: calc(100vw / 1920 * 21);
+    font-size: calc(100vw / 1920 * 18);
   }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   /* Your CSS rules for small devices */
   html {
-    font-size: calc(100vw / 1920 * 17);
+    font-size: calc(100vw / 1920 * 12.6);
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /* Your CSS rules for medium devices */
   html {
-    font-size: calc(100vw / 1920 * 15);
+    font-size: calc(100vw / 1920 * 11);
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* Your CSS rules for large devices */
   html {
-    font-size: calc(100vw / 1920 * 13);
+    font-size: calc(100vw / 1920 * 10);
   }
 }
 
 @media only screen and (min-width: 1200px) {
   /* Your CSS rules for extra large devices */
+  html {
+  font-size: calc(100vw / 1920 * 10.4);
+  }
 }
